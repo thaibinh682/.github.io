@@ -8,10 +8,7 @@ function changeImage() {
   images[currentIndex].classList.add('active'); // Thêm class active cho ảnh hiện tại
 }
 
-
-
-setInterval(changeImage, 3000);  // Chuyển ảnh mỗi 3 giây
-
+let imageInterval = setInterval(changeImage, 3000);  // Chuyển ảnh mỗi 3 giây
 
 document.addEventListener('DOMContentLoaded', () => {
   images[0].classList.add('active'); // Hiển thị ảnh đầu tiên khi trang được tải

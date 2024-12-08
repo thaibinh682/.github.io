@@ -142,3 +142,57 @@ footer {
   height: 50px; /* Điều chỉnh kích thước logo */
   width: auto;
 }
+
+/* Phần Tin Tức */
+.news-section {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.news-section .news-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.news-section .news-item img {
+  width: 45%;  /* Cố định chiều rộng */
+  height: auto;
+  flex: 1;  /* Đảm bảo ảnh có thể kéo dài */
+}
+
+.news-section .news-content {
+  width: 50%;  /* Cố định chiều rộng */
+  padding-left: 20px;
+  flex: 1;  /* Đảm bảo phần nội dung cũng chiếm không gian */
+}
+
+
+.news-section .news-content h3 {
+  white-space: nowrap;  /* Ngừng xuống dòng trong tiêu đề */
+  text-overflow: ellipsis; /* Hiển thị "..." nếu văn bản quá dài */
+  overflow: hidden;
+}
+
+
+.news-section .news-content p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.news-section .news-content a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #004aad;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.news-section .news-content a:hover {
+  background-color: #0078d4;
+}
