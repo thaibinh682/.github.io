@@ -1,0 +1,144 @@
+/* Cài đặt lại toàn bộ layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;  /* Màu nền đổi thành đen */
+  padding: 20px 30px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+  font-size: 24px;
+}
+
+header nav .menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+header nav .menu li {
+  display: inline;
+}
+
+header nav .menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.auth-buttons .btn {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-buttons .login {
+  background-color: white;
+  color: #004aad;
+}
+
+.auth-buttons .register {
+  background-color: #f39c12;
+  color: white;
+}
+
+.introduction {
+  padding: 40px 20px;
+  background: linear-gradient(90deg, #004aad, #0078d4);
+  color: white;
+  text-align: center;
+}
+
+.introduction .intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.introduction h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.introduction p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.introduction h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #f39c12;
+}
+
+.introduction p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: white;
+}
+
+.introduction .learn-more {
+  padding: 10px 20px;
+  background: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.introduction .learn-more:hover {
+  background: #e67e22;
+}
+
+.banner {
+  display: flex;
+  overflow: hidden;
+  background: #f4f4f4;
+  position: relative;
+  height: 100vh;  /* Chiếm toàn bộ chiều cao của cửa sổ */
+}
+
+.carousel img {
+  width: 100vw;  /* Chiếm toàn bộ chiều rộng của cửa sổ */
+  height: 100vh;  /* Chiếm toàn bộ chiều cao của cửa sổ */
+  object-fit: cover;  /* Đảm bảo ảnh không bị biến dạng, cắt bớt nếu cần */
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.carousel img.active {
+  opacity: 1;
+}
+
+footer {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Logo */
+.logo-img {
+  height: 50px; /* Điều chỉnh kích thước logo */
+  width: auto;
+}
