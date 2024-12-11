@@ -53,12 +53,12 @@ header nav .menu a {
 }
 
 .auth-buttons .login {
-  background-color: white;
+  background-color: #f39c12;
   color: #004aad;
 }
 
 .auth-buttons .register {
-  background-color: #f39c12;
+  background-color: red;
   color: white;
 }
 
@@ -135,13 +135,83 @@ header nav .menu a {
 }
 
 
-footer {
-  background-color: #000000;  /* Màu nền đổi thành đen */
-  color: white;
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  padding: 10px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.footer-column a::before,
+.footer-column a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 20px; /* Độ dài gạch ngang */
+  height: 2px; /* Độ dày gạch ngang */
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+
+.footer-column a::before {
+  left: -25px; /* Gạch ngang phía trước */
+}
+
+.footer-column a::after {
+  right: -25px; /* Gạch ngang phía sau */
+}
+
+.footer-column a:hover {
+  text-decoration: none;
+}
+
+.footer-column ul ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.footer-bottom {
   margin-top: 20px;
 }
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+
+
+
+
 
 /* Logo */
 .logo-img {
