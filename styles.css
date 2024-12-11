@@ -273,3 +273,9 @@ header nav .menu a {
 .separator {
   margin-bottom: 80px;  /* Giãn cách giữa các tin tức */
 }
+
+.big-dot {
+  font-size: 15px; /* Kích thước dấu chấm */
+  color: white;      /* Màu sắc */
+}
+
