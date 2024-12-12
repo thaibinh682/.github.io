@@ -279,3 +279,35 @@ header nav .menu a {
   color: white;      /* Màu sắc */
 }
 
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Sắp xếp theo chiều dọc */
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0; /* Khoảng cách giữa các mục menu */
+    }
+
+    .header {
+        text-align: center; /* Canh giữa nội dung */
+    }
+
+    .menu-icon {
+        display: block; /* Hiển thị icon menu (nếu có) */
+    }
+}
+
+
+nav {
+    /* width: 100%;  Đảm bảo thanh menu chiếm toàn bộ chiều rộng */
+    overflow: hidden; /* Ngăn chặn nội dung tràn */
+}
+
+nav ul {
+    display: flex; /* Sắp xếp ngang các mục menu */
+    /* justify-content: space-around; Phân bổ đều các mục */
+    flex-wrap: wrap; /* Cho phép xuống hàng khi không đủ chỗ */
+}
+
