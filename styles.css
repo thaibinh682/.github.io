@@ -311,3 +311,44 @@ nav ul {
     flex-wrap: wrap; /* Cho phép xuống hàng khi không đủ chỗ */
 }
 
+/* Điều chỉnh Header cho màn hình nhỏ */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo img {
+    max-width: 150px; /* Thu nhỏ logo */
+    height: auto;
+  }
+
+  nav ul.menu {
+    display: flex;
+    flex-direction: column; /* Các mục menu xếp dọc */
+    gap: 10px;
+    padding: 0;
+  }
+
+  nav ul.menu li {
+    margin: 5px 0;
+  }
+
+  .auth-buttons {
+    display: flex;
+    flex-direction: column; /* Đăng nhập và Đăng ký xếp dọc */
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .auth-buttons .btn {
+    padding: 8px 12px; /* Thu gọn nút */
+    font-size: 14px;
+  }
+
+  .banner img {
+    width: 100%; /* Banner co giãn theo màn hình */
+    height: auto;
+  }
+}
